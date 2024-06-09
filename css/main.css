@@ -1,0 +1,221 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "Fira-Sans";
+  src: url("../fonts/FiraSans-Regular.ttf");
+  src: url("../fonts/FiraSans-SemiBold.ttf");
+}
+body {
+  font-family: "Fira-Sans";
+}
+
+.container {
+  max-width: 1388px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+:root {
+  --header-bg: #191919;
+  --accent: #05b093;
+}
+
+.header {
+  background-color: var(--header-bg);
+  margin-bottom: 60px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 102px;
+  font-size: 16px;
+}
+.header__nav a {
+  color: #fff;
+}
+
+.header__nav-link {
+  text-transform: uppercase;
+}
+
+.header__nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header__list-item {
+  position: relative;
+}
+.header__list-item::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  background-color: #fff;
+  transform: rotate(135deg);
+  right: -20px;
+  bottom: 40%;
+  border-radius: 1px;
+}
+.header__list-item:last-child::after {
+  content: none;
+}
+
+.concert {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 184px;
+}
+
+.concert__slider-prev {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.concert__slider-prev img {
+  border-radius: 8px;
+}
+
+.concert__slider-card {
+  padding: 12px 16px;
+  background-color: rgba(25, 25, 25, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 414px;
+  max-height: 104px;
+}
+
+.afish__title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 140%;
+  margin-bottom: 100px;
+}
+
+.afish__title-text {
+  font-size: 48px;
+}
+
+.afish__title-events {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 24px;
+}
+
+.afish__card {
+  display: flex;
+  line-height: 140%;
+  gap: 62px;
+  padding: 32px 60px;
+  background-color: rgba(25, 25, 25, 0.05);
+}
+.afish__card img {
+  border-radius: 14px;
+}
+
+.afish__card-date {
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  color: #191919;
+  opacity: 0.75;
+}
+
+.afish__date-number {
+  font-size: 64px;
+}
+
+.afish__date-text {
+  font-size: 32px;
+  display: block;
+  margin-top: 29px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Fira-Sans';
+	src: url('../fonts/FiraSans-Regular.ttf');
+	src: url('../fonts/FiraSans-SemiBold.ttf');
+}
+
+body {
+	font-family: 'Fira-Sans';
+}
+
+.container {
+	max-width: 1388px;
+	padding: 0 24px;
+	margin: 0 auto;
+}

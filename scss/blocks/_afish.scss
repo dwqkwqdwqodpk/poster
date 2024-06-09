@@ -1,0 +1,49 @@
+// afish-section
+
+.afish__title {
+	display: flex;
+	justify-content: space-between;
+	line-height: 140%;
+	margin-bottom: 100px;
+}
+
+.afish__title-text {
+	font-size: 48px;
+}
+
+.afish__title-events {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+	font-size: 24px;
+}
+
+.afish__card {
+	display: flex;
+	line-height: 140%;
+	gap: 62px;
+	padding: 32px 60px;
+	background-color: rgb(25, 25, 25, 0.05);
+
+    img {
+        border-radius: 14px;
+    }
+}
+
+.afish__card-date {
+	text-transform: uppercase;
+	text-align: center;
+	align-content: center;
+	color: #191919;
+	opacity: 0.75;
+}
+
+.afish__date-number {
+	font-size: 64px;
+}
+
+.afish__date-text {
+	font-size: 32px;
+	display: block;
+	margin-top: 29px;
+}
