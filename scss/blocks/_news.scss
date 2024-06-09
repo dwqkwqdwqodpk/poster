@@ -91,10 +91,13 @@
 	gap: 4px;
 }
 .dates__item {
-	padding: 9px 16px;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: rgb(25, 25, 25, 0.3);
 	color: #fff;
-	height: fit-content;
 	font-weight: bold;
 	border-radius: 4px;
 }
@@ -102,7 +105,6 @@
 .dates__item-active {
 	background-color: var(--accent);
 }
-
 
 .month__wrapper {
 	display: flex;
