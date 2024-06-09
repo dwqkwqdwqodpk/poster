@@ -92,12 +92,20 @@ legend {
 }
 body {
   font-family: "Fira-Sans";
+  color: #191919;
 }
 
 .container {
   max-width: 1388px;
   padding: 0 24px;
   margin: 0 auto;
+}
+
+.main button {
+  transition: background-color 0.2s ease-in;
+}
+.main button:hover {
+  background-color: rgba(5, 176, 147, 0.85);
 }
 
 :root {
@@ -173,10 +181,14 @@ body {
   max-height: 104px;
 }
 
+.afish-section {
+  line-height: 140%;
+  margin-bottom: 134px;
+}
+
 .afish__title {
   display: flex;
   justify-content: space-between;
-  line-height: 140%;
   margin-bottom: 100px;
 }
 
@@ -189,11 +201,20 @@ body {
   align-items: center;
   gap: 32px;
   font-size: 24px;
+  color: #191919;
+  transition: all 0.2s ease-in;
+}
+.afish__title-events:hover {
+  opacity: 0.85;
+}
+
+.afish__cards {
+  display: grid;
+  gap: 80px;
 }
 
 .afish__card {
   display: flex;
-  line-height: 140%;
   gap: 62px;
   padding: 32px 60px;
   background-color: rgba(25, 25, 25, 0.05);
@@ -212,10 +233,158 @@ body {
 
 .afish__date-number {
   font-size: 64px;
+  margin-bottom: 30px;
+  display: block;
 }
 
 .afish__date-text {
   font-size: 32px;
   display: block;
-  margin-top: 29px;
+}
+
+.afish__card-text {
+  display: grid;
+  max-width: 415px;
+}
+
+.afish__card-title {
+  font-size: 32px;
+  margin-bottom: 16px;
+  line-height: 140%;
+}
+
+.afish__card-pr {
+  font-size: 16px;
+  opacity: 0.75;
+  margin-bottom: 40px;
+}
+
+.afish__card-icons {
+  display: flex;
+  max-height: 32px;
+  gap: 30px;
+}
+
+.afish__card-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  opacity: 0.75;
+}
+
+.afish__button {
+  padding: 15px 30px;
+  background-color: var(--accent);
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50px;
+  align-self: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.news__block-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.news__title {
+  font-size: 48px;
+  line-height: 140%;
+  margin-bottom: 60px;
+}
+
+.news__card-block {
+  max-width: 300px;
+}
+
+.news__card-item img {
+  margin-bottom: 32px;
+  font-size: 24px;
+  border-radius: 12px;
+}
+
+.news__card-title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+
+.news__card-text {
+  font-size: 16px;
+  opacity: 0.75;
+}
+
+.news__excursions {
+  justify-self: flex-end;
+}
+
+.excursions__img-wrapper {
+  position: relative;
+}
+
+.excursions__title {
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
+  color: #fff;
+  font-size: 32px;
+}
+
+.excursions__calendar {
+  padding: 24px;
+  background-color: rgba(25, 25, 25, 0.05);
+  display: flex;
+  gap: 38px;
+}
+
+.excursions__calendar-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.month__button-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.month__button {
+  padding: 12px;
+  background-color: var(--accent);
+}
+
+.month-right img {
+  rotate: 180deg;
+}
+
+.dates__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 306px;
+  gap: 4px;
+}
+
+.dates__item {
+  padding: 9px 16px;
+  background-color: rgba(25, 25, 25, 0.3);
+  color: #fff;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.dates__item-active {
+  background-color: var(--accent);
+}
+
+.month__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
