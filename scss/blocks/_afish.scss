@@ -14,7 +14,7 @@
 	font-size: 48px;
 }
 
-.afish__title-events {
+.events {
 	display: flex;
 	align-items: center;
 	gap: 32px;
@@ -90,12 +90,3 @@
 	opacity: 0.75;
 }
 
-.afish__button {
-	padding: 15px 30px;
-	background-color: var(--accent);
-	height: fit-content;
-	border-radius: 50px;
-	align-self: center;
-	color: #fff;
-	flex-shrink: 0;
-}

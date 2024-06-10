@@ -7,6 +7,7 @@
 body {
 	font-family: 'Fira-Sans';
 	color: #191919;
+	line-height: 140%;
 }
 
 .container {
@@ -18,7 +19,7 @@ body {
 .main {
 	button {
 		transition: background-color 0.2s ease-in;
-		
+
 		&:hover {
 			background-color: rgb(5, 176, 147, 0.85);
 		}

@@ -1,0 +1,52 @@
+.info {
+	display: grid;
+}
+
+.info__main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+.info__title {
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 140%;
+}
+
+.info__events {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+.info__events-card {
+	display: flex;
+	align-items: center;
+	gap: 27px;
+}
+
+.info__card-date {
+	height: 100px;
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--accent);
+	color: #fff;
+	border-radius: 12px;
+
+	p {
+		line-height: 140%;
+	}
+}
+
+.info__card-text {
+	font-size: 32px;
+}
+
+.info__card-month {
+	font-size: 18px;
+}

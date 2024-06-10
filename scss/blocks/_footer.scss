@@ -1,0 +1,73 @@
+.footer {
+	margin-top: 150px;
+}
+
+.footer__wrap {
+	min-height: 386px;
+	background-color: #191919;
+	position: relative;
+}
+
+.footer__nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.footer__events {
+	color: #fff;
+}
+
+.footer__events-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 32px;
+}
+
+.footer__evenets-list {
+	display: flex;
+	gap: 24px;
+}
+
+.footer__evenets-link {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.footer__contacts {
+	color: #fff;
+}
+.footer__contacts-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 32px;
+}
+
+.footer__contacts-list {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.footer__contacts-item {
+	display: flex;
+}
+
+.footer__contacts-link {
+	color: #ffff;
+	font-size: 16px;
+}
+.mail {
+	border-bottom: 1px solid #fff;
+}
+
+.footer__copyright {
+	position: absolute;
+	color: #fff;
+	opacity: 0.5;
+	bottom: 32px;
+	left: calc(50% - 24px);
+}
