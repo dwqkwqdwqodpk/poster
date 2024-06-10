@@ -4,6 +4,12 @@
 	display: flex;
 	gap: 24px;
 	margin-bottom: 184px;
+
+	@media (max-width: 1250px) {
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+	}
 }
 
 .concert__slider-prev {
@@ -25,4 +31,10 @@
 	max-height: 104px;
 }
 .concert__slider-text {
+}
+
+.concert__slider-img {
+	@media (max-width: 1250px) {
+		max-width: 750px;
+	}
 }

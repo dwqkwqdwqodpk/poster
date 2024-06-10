@@ -137,10 +137,21 @@ body {
 .header__nav a {
   color: #fff;
 }
+@media (max-width: 1170px) {
+  .header__nav {
+    flex-wrap: wrap;
+  }
+}
 
 .header__nav-list {
   display: flex;
   gap: 40px;
+}
+@media (max-width: 1170px) {
+  .header__nav-list {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .header__list-item {
@@ -166,6 +177,13 @@ body {
   gap: 24px;
   margin-bottom: 184px;
 }
+@media (max-width: 1250px) {
+  .concert {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
 
 .concert__slider-prev {
   display: flex;
@@ -184,6 +202,12 @@ body {
   gap: 24px;
   width: 414px;
   max-height: 104px;
+}
+
+@media (max-width: 1250px) {
+  .concert__slider-img {
+    max-width: 750px;
+  }
 }
 
 .afish-section {
@@ -217,6 +241,11 @@ body {
   display: grid;
   gap: 80px;
 }
+@media (max-width: 1250px) {
+  .afish__cards {
+    justify-content: center;
+  }
+}
 
 .afish__card {
   display: flex;
@@ -226,6 +255,13 @@ body {
 }
 .afish__card img {
   border-radius: 14px;
+}
+@media (max-width: 1250px) {
+  .afish__card {
+    flex-direction: column;
+    border-radius: 25px;
+    gap: 35px;
+  }
 }
 
 .afish__card-date {
@@ -282,6 +318,13 @@ body {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 160px;
 }
+@media (max-width: 1250px) {
+  .news {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-items: center;
+  }
+}
 
 .news__block-wrapper {
   display: flex;
@@ -317,6 +360,11 @@ body {
 
 .news__excursions {
   justify-self: flex-end;
+}
+@media (max-width: 1250px) {
+  .news__excursions {
+    justify-self: unset;
+  }
 }
 
 .excursions__img-wrapper {
@@ -404,9 +452,15 @@ body {
 }
 
 .info__events {
-  display: flex;
+  display: grid;
   gap: 24px;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1370px) {
+  .info__events {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 }
 
 .info__events-card {
@@ -455,9 +509,21 @@ body {
   padding-bottom: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 1200px) {
+  .footer__nav {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
 
 .footer__events {
   color: #fff;
+}
+@media (max-width: 1200px) {
+  .footer__events {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
 }
 
 .footer__events-title {
@@ -479,6 +545,11 @@ body {
 
 .footer__contacts {
   color: #fff;
+}
+@media (max-width: 1200px) {
+  .footer__contacts {
+    grid-area: 3;
+  }
 }
 
 .footer__contacts-title {
@@ -512,12 +583,6 @@ body {
   opacity: 0.5;
   bottom: 32px;
   left: calc(50% - 24px);
-}
-
-.concp__title {
-  font-size: 48px;
-  text-align: center;
-  margin-bottom: 100px;
 }
 
 .tickets__wrapper {

@@ -30,6 +30,10 @@
 .afish__cards {
 	display: grid;
 	gap: 80px;
+
+	@media (max-width:1250px) {
+		justify-content: center;
+	}
 }
 
 .afish__card {
@@ -40,6 +44,11 @@
 
 	img {
 		border-radius: 14px;
+	}
+	@media (max-width:1250px) {
+		flex-direction: column;
+		border-radius: 25px;
+		gap: 35px;
 	}
 }
 

@@ -1,6 +1,6 @@
 .header {
 	background-color: var(--header-bg);
-    margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .header__nav {
@@ -12,11 +12,20 @@
 	a {
 		color: #fff;
 	}
+	@include mediaTablet {
+		flex-wrap: wrap;
+	}
 }
+
 .header__nav-list {
 	display: flex;
 	gap: 40px;
+	@include mediaTablet {
+		width: 100%;
+		justify-content: space-between;
+	}
 }
+
 .header__list-item {
 	position: relative;
 	&::after {
@@ -28,7 +37,7 @@
 		transform: rotate(135deg);
 		right: -20px;
 		bottom: 40%;
-        border-radius: 1px;
+		border-radius: 1px;
 	}
 	&:last-child {
 		&::after {
@@ -36,5 +45,6 @@
 		}
 	}
 }
+
 .header__nav-link {
 }

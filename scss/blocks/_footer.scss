@@ -14,10 +14,19 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 	border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+
+	@media (max-width:1200px) {
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+	}
 }
 
 .footer__events {
 	color: #fff;
+	@media (max-width:1200px) {
+		grid-column-start: 2;
+		grid-row-start: 3;
+	}
 }
 
 .footer__events-title {
@@ -39,6 +48,10 @@
 
 .footer__contacts {
 	color: #fff;
+
+	@media (max-width:1200px) {
+		grid-area: 3;
+	}
 }
 .footer__contacts-title {
 	font-size: 24px;

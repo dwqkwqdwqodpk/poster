@@ -1,5 +1,6 @@
 // base
 @import './base/reset';
+@import './base/mixins';
 @import './base/base';
 @import './base/vars';
 
@@ -10,7 +11,6 @@
 @import './blocks/news';
 @import './blocks/info';
 @import './blocks/footer';
-@import './blocks/consert-page';
 @import './blocks/tickets-page';
 @import './blocks/button';
 @import './blocks/address';

@@ -2,6 +2,12 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 160px;
+
+	@media (max-width:1250px) {
+		grid-template-columns: 1fr;
+		gap: 50px;
+		justify-items: center;
+	}
 }
 
 .news__block {
@@ -43,6 +49,10 @@
 
 .news__excursions {
 	justify-self: flex-end;
+
+	@media (max-width:1250px) {
+		justify-self: unset;
+	}
 }
 
 .excursions__img-wrapper {
