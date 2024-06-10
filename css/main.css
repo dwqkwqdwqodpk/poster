@@ -109,6 +109,14 @@ body {
   background-color: rgba(5, 176, 147, 0.85);
 }
 
+.ymap {
+  margin-top: 100px;
+  text-align: center;
+}
+.ymap iframe {
+  border-radius: 12px;
+}
+
 :root {
   --header-bg: #191919;
   --accent: #05b093;
@@ -599,4 +607,83 @@ body {
   align-self: center;
   color: #fff;
   flex-shrink: 0;
+}
+
+.contacts__title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 140%;
+  margin-bottom: 100px;
+}
+
+.contacts__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.address__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.addres__text {
+  font-size: 16px;
+}
+
+.contacts__address {
+  margin-bottom: 40px;
+}
+
+.contacts__opening-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.contacts__opening-list {
+  display: grid;
+  gap: 12px;
+}
+
+.contacts__second-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.conctacts__second-link {
+  font-size: 16px;
+  color: #191919;
+}
+
+.contacts__second-info {
+  margin-bottom: 40px;
+}
+
+.contacts__second-rent {
+  margin-bottom: 40px;
+}
+
+.contacts__rent-title {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.contacts__second-social a {
+  color: #191919;
+}
+
+.contacts-main {
+  justify-items: center;
+}
+
+.contacts__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__wrapper {
+  max-width: 966px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
