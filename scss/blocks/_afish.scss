@@ -8,6 +8,13 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 100px;
+
+	@media (max-width: 650px) {
+		display: grid;
+		gap: 80px;
+		justify-content: center;
+		text-align: center;
+	}
 }
 
 .afish__title-text {
@@ -27,11 +34,15 @@
 	}
 }
 
+.afish__title-events {
+	// @media (max-width:)
+}
+
 .afish__cards {
 	display: grid;
 	gap: 80px;
 
-	@media (max-width:1250px) {
+	@media (max-width: 1250px) {
 		justify-content: center;
 	}
 }
@@ -45,10 +56,13 @@
 	img {
 		border-radius: 14px;
 	}
-	@media (max-width:1250px) {
+	@media (max-width: 1250px) {
 		flex-direction: column;
 		border-radius: 25px;
 		gap: 35px;
+	}
+	@media (max-width: 600px) {
+		padding: 32px 30px;
 	}
 }
 
@@ -91,6 +105,13 @@
 	display: flex;
 	max-height: 32px;
 	gap: 30px;
+
+	@media (max-width: 500px) {
+		display: grid;
+		gap: 15px;
+		justify-content: center;
+		max-height: unset;
+	}
 }
 .afish__card-item {
 	display: flex;
@@ -98,4 +119,3 @@
 	gap: 24px;
 	opacity: 0.75;
 }
-

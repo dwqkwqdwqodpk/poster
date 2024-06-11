@@ -7,6 +7,13 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 100px;
+
+	@media (max-width: 750px) {
+		display: grid;
+		gap: 30px;
+		justify-content: center;
+		text-align: center;
+	}
 }
 
 .info__title {
@@ -15,15 +22,16 @@
 	line-height: 140%;
 }
 
-.info__events {
-	display: grid;
-	gap: 24px;
-	grid-template-columns: repeat(4, 1fr);
-
-	@media (max-width: 1370px) {
-		grid-template-columns: repeat(2, 1fr);
-		justify-items: center;
+.events-text {
+	@media (max-width:750px) {
+		justify-content: center;
 	}
+}
+
+.info__events {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
 }
 
 .info__events-card {

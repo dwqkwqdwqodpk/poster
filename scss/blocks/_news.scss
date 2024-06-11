@@ -3,9 +3,9 @@
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 160px;
 
-	@media (max-width:1250px) {
+	@media (max-width: 1250px) {
 		grid-template-columns: 1fr;
-		gap: 50px;
+		gap: 80px;
 		justify-items: center;
 	}
 }
@@ -16,6 +16,10 @@
 .news__block-wrapper {
 	display: flex;
 	gap: 24px;
+	@media (max-width: 740px) {
+		display: grid;
+		gap: 80px;
+	}
 }
 
 .news__title {
@@ -50,7 +54,7 @@
 .news__excursions {
 	justify-self: flex-end;
 
-	@media (max-width:1250px) {
+	@media (max-width: 1250px) {
 		justify-self: unset;
 	}
 }
@@ -72,6 +76,12 @@
 	background-color: rgb(25, 25, 25, 0.05);
 	display: flex;
 	gap: 38px;
+
+	@media (max-width: 600px) {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 12px;
+	}
 }
 
 .excursions__calendar-title {
@@ -121,4 +131,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap: 10px;
+
+	@media (max-width: 600px) {
+		grid-row: 2;
+	}
 }

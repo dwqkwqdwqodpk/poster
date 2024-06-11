@@ -101,6 +101,11 @@ body {
   padding: 0 24px;
   margin: 0 auto;
 }
+@media (max-width: 1170px) {
+  .container {
+    padding: 15px;
+  }
+}
 
 .main button {
   transition: background-color 0.2s ease-in;
@@ -227,8 +232,12 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
-  width: 414px;
+  width: clamp(15.938rem, 13.098rem + 14.2vw, 25.875rem);
   max-height: 104px;
+}
+
+.concert__slider-text {
+  font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
 }
 
 @media (max-width: 1250px) {
@@ -246,6 +255,14 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+}
+@media (max-width: 650px) {
+  .afish__title {
+    display: grid;
+    gap: 80px;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .afish__title-text {
@@ -290,6 +307,11 @@ body {
     gap: 35px;
   }
 }
+@media (max-width: 600px) {
+  .afish__card {
+    padding: 32px 30px;
+  }
+}
 
 .afish__card-date {
   text-transform: uppercase;
@@ -332,6 +354,14 @@ body {
   max-height: 32px;
   gap: 30px;
 }
+@media (max-width: 500px) {
+  .afish__card-icons {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    max-height: unset;
+  }
+}
 
 .afish__card-item {
   display: flex;
@@ -348,7 +378,7 @@ body {
 @media (max-width: 1250px) {
   .news {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 80px;
     justify-items: center;
   }
 }
@@ -356,6 +386,12 @@ body {
 .news__block-wrapper {
   display: flex;
   gap: 24px;
+}
+@media (max-width: 740px) {
+  .news__block-wrapper {
+    display: grid;
+    gap: 80px;
+  }
 }
 
 .news__title {
@@ -412,6 +448,13 @@ body {
   display: flex;
   gap: 38px;
 }
+@media (max-width: 600px) {
+  .excursions__calendar {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+}
 
 .excursions__calendar-title {
   font-size: 32px;
@@ -459,6 +502,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
+}
+@media (max-width: 600px) {
+  .month__wrapper {
+    grid-row: 2;
+  }
 }
 
 .info {
@@ -471,6 +520,14 @@ body {
   align-items: center;
   margin-bottom: 100px;
 }
+@media (max-width: 750px) {
+  .info__main {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+}
 
 .info__title {
   font-size: 48px;
@@ -478,16 +535,16 @@ body {
   line-height: 140%;
 }
 
-.info__events {
-  display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(4, 1fr);
-}
-@media (max-width: 1370px) {
-  .info__events {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+@media (max-width: 750px) {
+  .events-text {
+    justify-content: center;
   }
+}
+
+.info__events {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .info__events-card {
@@ -542,6 +599,12 @@ body {
     gap: 10px;
   }
 }
+@media (max-width: 700px) {
+  .footer__nav {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
 
 .footer__events {
   color: #fff;
@@ -550,6 +613,12 @@ body {
   .footer__events {
     grid-column-start: 2;
     grid-row-start: 3;
+  }
+}
+@media (max-width: 700px) {
+  .footer__events {
+    grid-column-start: unset;
+    grid-row-start: unset;
   }
 }
 

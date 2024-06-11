@@ -19,6 +19,11 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 10px;
 	}
+
+	@media (max-width:700px) {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
 }
 
 .footer__events {
@@ -26,6 +31,10 @@
 	@media (max-width:1200px) {
 		grid-column-start: 2;
 		grid-row-start: 3;
+	}
+	@media (max-width:700px) {
+		grid-column-start: unset;
+		grid-row-start: unset;
 	}
 }
 

@@ -27,10 +27,11 @@
 	display: flex;
 	align-items: center;
 	gap: 24px;
-	width: 414px;
+	width: clamp(15.938rem, 13.098rem + 14.2vw, 25.875rem);
 	max-height: 104px;
 }
 .concert__slider-text {
+	font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
 }
 
 .concert__slider-img {
