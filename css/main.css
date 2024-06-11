@@ -120,6 +120,7 @@ body {
 }
 .ymap iframe {
   border-radius: 12px;
+  width: clamp(16.875rem, 6.411rem + 52.32vw, 53.5rem);
 }
 
 .no-scroll {
@@ -686,6 +687,12 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
 }
+@media (max-width: 900px) {
+  .tickets__wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
 
 .tickets__text-block {
   max-width: 636px;
@@ -752,9 +759,15 @@ body {
 .tickets__imgs-block {
   display: flex;
   gap: 24px;
+  width: clamp(16.875rem, 16.232rem + 3.21vw, 19.125rem);
 }
 .tickets__imgs-block img {
   border-radius: 12px;
+}
+@media (max-width: 1370px) {
+  .tickets__imgs-block {
+    flex-direction: column;
+  }
 }
 
 .button {
@@ -775,11 +788,6 @@ body {
   font-size: 48px;
   line-height: 140%;
   margin-bottom: 100px;
-}
-
-.contacts__row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .address__title {
@@ -842,6 +850,12 @@ body {
 .contacts__row {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 950px) {
+  .contacts__row {
+    flex-direction: column;
+    gap: 100px;
+  }
 }
 
 .contacts__wrapper {

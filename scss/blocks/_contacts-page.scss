@@ -5,10 +5,6 @@
 	margin-bottom: 100px;
 }
 
-.contacts__row {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
 
 .address__title {
 	font-size: 24px;
@@ -71,6 +67,11 @@
 .contacts__row {
 	display: flex;
 	justify-content: space-between;
+
+	@media (max-width:950px) {
+		flex-direction: column;
+		gap: 100px;
+	}
 }
 
 .contacts__wrapper {

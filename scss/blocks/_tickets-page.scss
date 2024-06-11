@@ -2,6 +2,11 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 24px;
+
+	@media (max-width: 900px) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
 }
 
 .tickets__text-block {
@@ -66,9 +71,13 @@
 
 .tickets__imgs-block {
 	display: flex;
-    gap: 24px;
+	gap: 24px;
+	width: clamp(16.875rem, 16.232rem + 3.21vw, 19.125rem);
+	img {
+		border-radius: 12px;
+	}
 
-    img {
-        border-radius: 12px;
-    }
+	@media (max-width: 1370px) {
+		flex-direction: column;
+	}
 }

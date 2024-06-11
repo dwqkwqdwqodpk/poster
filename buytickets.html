@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Афиша</title>
 		<link rel="stylesheet" href="./css/main.css" />
-		<script src="./js/app.js"></script>
+		<script src="./js/app.js" defer></script>
 	</head>
 
 	<body>
@@ -35,6 +35,39 @@
 						<a href="#" class="header__nav-link">Планы залов</a>
 					</li>
 				</ul>
+				<button class="mobile__button">
+					<span class="mobile__button-item mobile__button-item1"></span>
+					<span class="mobile__button-item mobile__button-item2"></span>
+					<span class="mobile__button-item mobile__button-item3"></span>
+					<span class="mobile__button-item mobile__button-item4"></span>
+				</button>
+				<div class="mobile__wrapper none">
+					<button class="mobile__button-close">
+						<img src="./img/close.svg" alt="" />
+					</button>
+					<ul class="mobile__wrap-list">
+						<li class="mobile__list-item">
+							<a href="concert.html" class="mobile__list-link">Афиша</a>
+						</li>
+						<li class="mobile__list-item">
+							<a href="buytickets.html" class="mobile__list-link"
+								>Заказ билетов</a
+							>
+						</li>
+						<li class="mobile__list-item">
+							<a href="contacts.html" class="mobile__list-link">Контакты</a>
+						</li>
+						<li class="mobile__list-item">
+							<a href="" class="mobile__list-link">История дворца</a>
+						</li>
+						<li class="mobile__list-item">
+							<a href="" class="mobile__list-link">Галерея</a>
+						</li>
+						<li class="mobile__list-item">
+							<a href="" class="mobile__list-link">Планы залов</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<main class="main container">
