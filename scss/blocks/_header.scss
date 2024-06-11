@@ -9,11 +9,24 @@
 	align-items: center;
 	height: 102px;
 	font-size: 16px;
+	position: relative;
 	a {
 		color: #fff;
 	}
 	@include mediaTablet {
 		flex-wrap: wrap;
+	}
+
+	@media (max-width: 425px) {
+		display: grid;
+		justify-content: unset;
+		button {
+			grid-row-start: 1;
+			justify-self: flex-end;
+		}
+		a {
+			justify-self: center;
+		}
 	}
 }
 
@@ -23,6 +36,10 @@
 	@include mediaTablet {
 		width: 100%;
 		justify-content: space-between;
+	}
+
+	@media (max-width: 800px) {
+		display: none;
 	}
 }
 
