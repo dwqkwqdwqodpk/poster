@@ -189,6 +189,7 @@ body {
 
 .header__list-item {
   position: relative;
+  transition: all 0.2s ease-in;
 }
 .header__list-item::after {
   content: "";
@@ -203,6 +204,9 @@ body {
 }
 .header__list-item:last-child::after {
   content: none;
+}
+.header__list-item:hover {
+  opacity: 0.85;
 }
 
 .concert {
@@ -605,6 +609,12 @@ body {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+}
+.footer__nav a {
+  transition: all 0.2s ease-in;
+}
+.footer__nav a:hover {
+  opacity: 0.85;
 }
 
 .footer__events {
