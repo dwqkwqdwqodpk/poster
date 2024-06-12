@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Афиша</title>
 		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 		<script src="./js/app.js" defer></script>
 	</head>
 	<body>
@@ -71,9 +72,30 @@
 		</header>
 		<main class="main container">
 			<section class="concert">
-				<div class="concert__slider-img">
-					<img src="./img/main/concert.jpg" alt="" />
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="concert__slider-img">
+								<img src="./img/main/concert.jpg" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="concert__slider-img">
+								<img src="./img/main/concert.jpg" alt="" />
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="concert__slider-img">
+								<img src="./img/main/concert.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
 				</div>
+
 				<div class="concert__slider-prev">
 					<div class="concert__slider-card">
 						<img src="./img/main/thumb-slider__image.jpg" alt="" />
@@ -177,7 +199,7 @@
 					<div class="excursions__calendar">
 						<div class="month__wrapper">
 							<div class="excursions__month">
-								<h4 class="excursions__calendar-title">Июль</h4>
+								<h4 class="excursions__calendar-title"></h4>
 							</div>
 							<div class="month__button-wrapper">
 								<button class="month__button month-left">
@@ -314,5 +336,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	</body>
 </html>
