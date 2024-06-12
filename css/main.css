@@ -476,7 +476,7 @@ body {
   background-color: var(--accent);
 }
 
-.month-right img {
+#next img {
   rotate: 180deg;
 }
 
